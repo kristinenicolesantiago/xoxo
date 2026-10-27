@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Study E-Portfolio</title>
+<style>
+:root {
+  --gold: #b3975b;
+  --cream: #faf7f0;
+  --ink: #39352e;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Georgia, serif;
+  line-height: 1.8;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background: #fffdf8;
+  border-bottom: 1px solid #dfd0ad;
+  padding: 14px 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  z-index: 5;
+}
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font: 12px Arial, sans-serif;
+}
+nav a:hover { color: var(--gold); }
+.hero {
+  min-height: 80vh;
+  margin: 24px;
+  padding: 65px 20px;
+  border: 3px double var(--gold);
+  outline: 1px solid #dfd0ad;
+  outline-offset: -12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font: 11px Arial, sans-serif;
+  text-transform: uppercase;
+}
+h1 { font-size: clamp(35px, 7vw, 66px); line-height: 1.2; }
+h2 { font-size: 30px; font-weight: normal; }
+h3 { color: #8e7542; }
+.subtitle { max-width: 600px; }
+.portrait {
+  width: 130px;
+  height: 160px;
+  border: 1px solid var(--gold);
+  display: grid;
+  place-items: center;
+  background: #f0e8d8;
+  color: #776748;
+  font: 12px Arial, sans-serif;
+  margin: 20px;
+}
+section {
+  max-width: 950px;
+  margin: auto;
+  padding: 65px 24px;
+  scroll-margin-top: 65px;
+}
+.section-label {
+  color: var(--gold);
+  font: 11px Arial, sans-serif;
+  letter-spacing: 3px;
+}
+.card {
+  background: #fffdf8;
+  border: 1px solid #e4dac5;
+  padding: 24px;
+  margin: 16px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.button {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  padding: 10px 20px;
+  color: var(--ink);
+  text-decoration: none;
+  margin-top: 12px;
+}
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #dfd0ad;
+  font-size: 13px;
+}
+.placeholder { color: #8b8170; font-style: italic; }
+hr { border: 0; border-top: 1px solid #e4dac5; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#profile">PROFILE</a>
+  <a href="#goals">LEARNING GOALS</a>
+  <a href="#school">SCHOOL</a>
+  <a href="#weekly">WEEKLY JOURNAL</a>
+  <a href="#activities">ACTIVITIES</a>
+  <a href="#growth">ACTION PLAN</a>
+  <a href="#appendices">APPENDICES</a>
+</nav>
+
+<header class="hero" id="home">
+  <p class="eyebrow">Teacher Education • Digital Portfolio</p>
+  <div class="portrait">YOUR PHOTO</div>
+  <h1>My Field Study<br>E-Portfolio</h1>
+  <p class="subtitle">Field Study 1 and Field Study 2</p>
+  <p>Classroom Observations • Teaching Experiences • Professional Growth</p>
+  <p class="placeholder">Your Name | Academic Year</p>
+  <a class="button" href="#introduction">Explore My Portfolio</a>
+</header>
+
+<section id="introduction">
+  <p class="section-label">01 / INTRODUCTION</p>
+  <h2>Welcome to My Portfolio</h2>
+  <div class="card">
+    <p>This portfolio documents my learning experiences, classroom observations, participation, reflections, and professional development throughout Field Study 1 and Field Study 2. It reflects my growth as a future educator and my commitment to creating meaningful learning experiences for students.</p>
+  </div>
+</section>
+
+<section id="profile">
+  <p class="section-label">02 / STUDENT PROFILE</p>
+  <h2>About Me</h2>
+  <div class="card">
+    <h3>Personal Information</h3>
+    <p><b>Full Name:</b> <span class="placeholder">Your full name</span></p>
+    <p><b>Student Number:</b> <span class="placeholder">Your student number</span></p>
+    <p><b>Program and Major:</b> BSEd Major in Science</p>
+    <p><b>Academic Year:</b> <span class="placeholder">Academic year</span></p>
+    <p><b>Course Code and Title:</b> <span class="placeholder">Enter course details</span></p>
+    <p><b>Field Study Adviser:</b> <span class="placeholder">Adviser's name</span></p>
+    <p><b>Cooperating School:</b> Taguig National High School</p>
+    <p><b>Cooperating Teacher:</b> <span class="placeholder">Teacher's name</span></p>
+  </div>
+  <div class="card">
+    <h3>Brief Biography</h3>
+    <p class="placeholder">Write a short biography about yourself, your educational background, interests, and aspirations as a future Science teacher.</p>
+  </div>
+  <div class="card">
+    <h3>Personal Educational Philosophy</h3>
+    <p class="placeholder">Explain your beliefs about teaching, learning, student participation, and the role of a teacher.</p>
+  </div>
+  <div class="card">
+    <h3>Career Objectives</h3>
+    <p class="placeholder">Describe your professional goals and the kind of educator you aspire to become.</p>
+  </div>
+  <div class="card">
+    <h3>Curriculum Vitae</h3>
+    <p class="placeholder">Add your CV PDF link here when ready.</p>
+  </div>
+</section>
+
+<section id="goals">
+  <p class="section-label">03 / LEARNING GOALS</p>
+  <h2>My Learning Goals</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Field Study 1</h3>
+      <p class="placeholder">Describe your expectations and goals for classroom observation, understanding learners, and analyzing the teaching-learning environment.</p>
+    </div>
+    <div class="card">
+      <h3>Field Study 2</h3>
+      <p class="placeholder">Describe your goals for participating in classroom activities, assisting your cooperating teacher, and developing teaching skills.</p>
+    </div>
+  </div>
+</section>
+
+<section id="school">
+  <p class="section-label">04 / COOPERATING SCHOOL</p>
+  <h2>School Profile</h2>
+  <div class="card">
+    <h3>School Overview</h3>
+    <p class="placeholder">Add the school's background, location, history, and educational programs.</p>
+    <h3>Vision</h3>
+    <p class="placeholder">Insert the school's official vision.</p>
+    <h3>Mission</h3>
+    <p class="placeholder">Insert the school's official mission.</p>
+    <h3>Core Values</h3>
+    <p class="placeholder">Insert the school's official core values.</p>
+    <h3>Organizational Structure</h3>
+    <p class="placeholder">Add the approved organizational chart or description.</p>
+    <h3>School Facilities</h3>
+    <p class="placeholder">Add descriptions and permitted photographs of school facilities.</p>
+  </div>
+</section>
+
+<section id="weekly">
+  <p class="section-label">05 / WEEKLY DOCUMENTATION</p>
+  <h2>My Weekly Journal</h2>
+  <p>Each entry records my experiences, learning evidence, and reflections throughout my field study.</p>
+  <div class="card">
+    <h3>Week 1 — <span class="placeholder">Date</span></h3>
+    <p><b>Learning Objectives</b></p>
+    <p class="placeholder">What did I aim to learn?</p>
+    <p><b>Classroom Observations — FS1</b></p>
+    <p class="placeholder">Describe the classroom environment, learners, and teaching strategies observed.</p>
+    <p><b>Participation and Assigned Tasks — FS2</b></p>
+    <p class="placeholder">Describe the tasks performed and your participation.</p>
+    <p><b>Learning Evidence and Photo Documentation</b></p>
+    <p class="placeholder">Add permitted photographs, captions, and supporting evidence.</p>
+    <p><b>Weekly Reflection</b></p>
+    <p class="placeholder">What did I learn? What challenges did I encounter? How can I improve?</p>
+  </div>
+  <p class="placeholder">Duplicate the Week 1 entry for every succeeding week and update its content.</p>
+</section>
+
+<section id="activities">
+  <p class="section-label">06 / PROFESSIONAL DEVELOPMENT</p>
+  <h2>Activities and Achievements</h2>
+  <div class="card">
+    <h3 class="placeholder">Title of Activity</h3>
+    <p><b>Date:</b> <span class="placeholder">Activity date</span></p>
+    <p><b>Description:</b> <span class="placeholder">Describe the seminar, webinar, workshop, or institutional activity.</span></p>
+    <p><b>Reflection:</b> <span class="placeholder">Explain what you learned and how it contributes to your professional growth.</span></p>
+    <p><b>Photo Documentation and Certificates:</b></p>
+    <p class="placeholder">Add permitted photos and certificate links.</p>
+  </div>
+</section>
+
+<section id="growth">
+  <p class="section-label">07 / PROFESSIONAL GROWTH</p>
+  <h2>My Action Plan</h2>
+  <div class="card">
+    <p><b>Area for Improvement:</b> <span class="placeholder">Identify a teaching skill to improve.</span></p>
+    <p><b>Action Plan:</b> <span class="placeholder">List specific steps you will take.</span></p>
+    <p><b>Timeline:</b> <span class="placeholder">Set a target period.</span></p>
+    <p><b>Expected Outcome:</b> <span class="placeholder">Describe the improvement you expect to achieve.</span></p>
+  </div>
+</section>
+
+<section id="appendices">
+  <p class="section-label">08 / APPENDICES</p>
+  <h2>Supporting Documents</h2>
+  <div class="card">
+    <ul>
+      <li>Observation Forms</li>
+      <li>Attendance Records</li>
+      <li>Permitted School Forms</li>
+      <li>Endorsement or Acceptance Letter</li>
+      <li>Approved Class or Observation Schedule</li>
+      <li>Observation Notes or Field Notes</li>
+      <li>Feedback or Evaluation Forms</li>
+      <li>Applicable Consent Forms</li>
+    </ul>
+    <p class="placeholder">Add links to documents approved for sharing.</p>
+  </div>
+</section>
+
+<footer>
+  <p>FIELD STUDY 1 & FIELD STUDY 2</p>
+  <p>Teaching, Learning, and Professional Growth</p>
+</footer>
+
+</body>
+</html>
